@@ -11,6 +11,12 @@ import SocialIcons from './components/SocialIcons'
 import BlockchainSideDecor from './components/BlockchainSideDecor'
 import './App.css'
 
+// Prefix paths with Vite base URL (required for GitHub Pages: /shubham.portfolio/)
+const baseUrl = (path) => {
+  const base = import.meta.env.BASE_URL || '/'
+  return base + (path.startsWith('/') ? path.slice(1) : path)
+}
+
 // Split name for hero (v4 style)
 const [firstName, ...lastNameParts] = (profile.name || 'Shubham Tiwari').split(' ')
 const lastName = lastNameParts.join(' ') || 'Tiwari'
@@ -141,7 +147,7 @@ function App() {
                     <span className="v4-nav-tooltip" role="tooltip">{label}</span>
                     <span className="v4-nav-icon" aria-hidden="true">
                       <img
-                        src={`/icons/nav-${id === 'about' ? 'top' : id}.svg`}
+                        src={baseUrl(`/icons/nav-${id === 'about' ? 'top' : id}.svg`)}
                         alt=""
                         onError={(e) => {
                           e.target.style.display = 'none'
@@ -161,7 +167,7 @@ function App() {
         </div>
       </nav>
       <a
-        href="/Shubham_Resume.pdf"
+        href={baseUrl('/Shubham_Resume.pdf')}
         className="v4-nav-btn v4-nav-btn-fixed"
         target="_blank"
         rel="noopener noreferrer"
@@ -175,7 +181,7 @@ function App() {
             <div className="v4-hero-window-body">
               <div className="v4-hero-image-wrap v4-hero-image-top">
                 <div className="v4-hero-image-card">
-                  <img src={images.hero} alt="" />
+                  <img src={baseUrl(images.hero)} alt="" />
                 </div>
               </div>
               <div className="v4-hero-inner v4-hero-inner-column">
@@ -235,7 +241,7 @@ function App() {
             <div className="v4-about-grid">
               <div className="v4-about-image-wrap">
                 <div className="v4-about-image-card">
-                  <img src={images.about} alt="" />
+                  <img src={baseUrl(images.about)} alt="" />
                 </div>
               </div>
               <div className="v4-about-inner">
@@ -308,7 +314,7 @@ function App() {
                   <div className="v4-stacks-row-inner">
                     {[...techStacksRow1, ...techStacksRow1].map((item, i) => (
                       <span key={i} className="v4-stack-pill">
-                        <img src={item.icon} alt="" className="v4-stack-icon" />
+                        <img src={baseUrl(item.icon)} alt="" className="v4-stack-icon" />
                         <span>{item.name}</span>
                       </span>
                     ))}
@@ -318,7 +324,7 @@ function App() {
                   <div className="v4-stacks-row-inner">
                     {[...techStacksRow2, ...techStacksRow2].map((item, i) => (
                       <span key={i} className="v4-stack-pill">
-                        <img src={item.icon} alt="" className="v4-stack-icon" />
+                        <img src={baseUrl(item.icon)} alt="" className="v4-stack-icon" />
                         <span>{item.name}</span>
                       </span>
                     ))}
@@ -328,7 +334,7 @@ function App() {
                   <div className="v4-stacks-row-inner">
                     {[...techStacksRow3, ...techStacksRow3].map((item, i) => (
                       <span key={i} className="v4-stack-pill">
-                        <img src={item.icon} alt="" className="v4-stack-icon" />
+                        <img src={baseUrl(item.icon)} alt="" className="v4-stack-icon" />
                         <span>{item.name}</span>
                       </span>
                     ))}
