@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Railway icon</title>
+  <desc id="desc">Stylized tracks and R glyph in teal on navy, representing private DeFi rails.</desc>
+  <rect width="64" height="64" rx="14" fill="#0d2137" />
+  <path d="M18 18h28" stroke="#41ccc0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.4" />
+  <path d="M18 24h28" stroke="#41ccc0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6" />
+  <path d="M18 30h28" stroke="#41ccc0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.8" />
+  <path d="M18 36h28" stroke="#41ccc0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6" />
+  <path d="M18 42h28" stroke="#41ccc0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.4" />
+  <text
+    x="50%"
+    y="50%"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Georgia, 'Times New Roman', Times, serif"
+    font-size="20"
+    fill="#41ccc0"
+  >
+    Rw
+  </text>
+</svg>
+

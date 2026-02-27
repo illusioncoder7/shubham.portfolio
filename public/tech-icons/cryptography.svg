@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Cryptography icon</title>
+  <desc id="desc">Padlock over a grid of blocks in teal on navy, representing cryptography.</desc>
+  <rect width="64" height="64" rx="14" fill="#0d2137" />
+  <!-- block grid -->
+  <rect x="10" y="36" width="12" height="8" fill="#1a365d" stroke="#41ccc0" stroke-width="0.8" stroke-opacity="0.4" />
+  <rect x="26" y="36" width="12" height="8" fill="#1a365d" stroke="#41ccc0" stroke-width="0.8" stroke-opacity="0.4" />
+  <rect x="42" y="36" width="12" height="8" fill="#1a365d" stroke="#41ccc0" stroke-width="0.8" stroke-opacity="0.4" />
+  <rect x="18" y="46" width="12" height="8" fill="#1a365d" stroke="#41ccc0" stroke-width="0.8" stroke-opacity="0.4" />
+  <rect x="34" y="46" width="12" height="8" fill="#1a365d" stroke="#41ccc0" stroke-width="0.8" stroke-opacity="0.4" />
+  <!-- padlock -->
+  <rect x="24" y="22" width="16" height="12" rx="3" fill="#1a365d" stroke="#41ccc0" stroke-width="1.8" />
+  <path
+    d="M27 22v-2.5c0-3.2 2.3-5.5 5-5.5s5 2.3 5 5.5V22"
+    fill="none"
+    stroke="#41ccc0"
+    stroke-width="1.8"
+    stroke-linecap="round"
+  />
+  <circle cx="32" cy="27" r="1.6" fill="#41ccc0" />
+  <path d="M32 28.6v2.8" stroke="#41ccc0" stroke-width="1.4" stroke-linecap="round" />
+</svg>
+
