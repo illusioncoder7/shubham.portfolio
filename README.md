@@ -1,16 +1,40 @@
-# React + Vite
+# Shubham Tiwari — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site: blockchain engineer, smart contracts, DeFi, and ZK. Built with React and Vite, deployed on GitHub Pages.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Open [http://localhost:5173](http://localhost:5173).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Build
 
-## Expanding the ESLint configuration
+```bash
+npm run build
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Output is in `dist/`. Preview with `npm run preview`.
+
+## Deploy (GitHub Pages)
+
+- **Live site:** [https://illusioncoder7.github.io/shubham.portfolio/](https://illusioncoder7.github.io/shubham.portfolio/)
+- Push to `main`; the GitHub Action **Deploy to GitHub Pages** builds and deploys from `dist/`.
+- Base path is set to `/shubham.portfolio/` in `vite.config.js` for this repo.
+
+## Project layout
+
+- `src/App.jsx` — Main app, sections, nav, and base URL helper for assets
+- `src/data/resume.js` — Profile, experience, education, tech stacks, about copy
+- `src/components/` — SocialIcons, BlockchainSideDecor
+- `src/index.css` — Global and section styles (V4 theme)
+- `public/` — Static assets: images, nav icons (`public/icons/`), tech stack icons (`public/tech-icons/`), resume PDF
+
+## Tech
+
+- React 19, Vite 7
+- No router; single page with section IDs and hash links
+- CSS-only animations (scroll reveal, typewriter logo, nav tooltips)
