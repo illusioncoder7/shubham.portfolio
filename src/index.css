@@ -1804,12 +1804,62 @@ body {
   .v4-edu-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 }
 @media (max-width: 768px) {
-  .v4-nav { padding: 0 24px; height: 64px; flex-wrap: wrap; gap: 0.5rem; }
+  /* Nav: same content width as hero card (single column) */
+  .v4-nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    height: 64px;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 900px;
+    transform: translateX(-50%);
+  }
+  .v4-nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
   .v4-nav-menu { font-size: 12px; gap: 0.125rem; }
   .v4-nav-menu a { padding: 4px 5px; }
   .v4-nav-btn { padding: 5px 10px; font-size: 11px; }
-  .v4-hero { padding: 100px 24px 60px; }
-  .v4-section { padding: 4rem 24px 2.5rem; }
+  .v4-nav-card {
+    width: 100%;
+    margin: 8px 0;
+  }
+  /* Single-column mobile layout: hero then all sections stacked in one scrollable column */
+  .v4-two-column {
+    max-width: 900px;
+    margin: 72px auto 0;
+    padding: 0 16px 3rem;
+  }
+  .v4-hero { padding: 88px 0 40px; }
+  .v4-hero.v4-hero-column {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    max-width: none;
+    height: auto;
+  }
+  /* First hero card + inner code block: reduce height on mobile */
+  .v4-hero-card {
+    margin: 0.75rem 0 1rem;
+  }
+  .v4-hero-code-block {
+    padding: 0.75rem 1rem 0.5rem;
+    min-height: 150px;
+  }
+  .v4-main.v4-main-right {
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+  .v4-section { padding: 3.5rem 0 2.5rem; }
   .v4-about-card { padding: 1.25rem 1.5rem; }
   .v4-about-image-wrap { max-width: 220px; min-height: 220px; aspect-ratio: 1; height: auto; }
   .v4-exp-grid { grid-template-columns: 1fr; }
