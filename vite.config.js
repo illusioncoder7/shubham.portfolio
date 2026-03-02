@@ -2,8 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-// GitHub Pages project site: https://illusioncoder7.github.io/shubham.portfolio/
+// Custom domain (shubhamtiwari.com.np): site is served at root, so base must be '/'.
+// With base '/', the *.github.io/shubham.portfolio/ URL will not load assets correctly.
 export default defineConfig({
   plugins: [react()],
-  base: '/shubham.portfolio/',
+  base: '/',
 })
