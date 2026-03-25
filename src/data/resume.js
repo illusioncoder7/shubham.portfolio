@@ -24,7 +24,7 @@ export const experience = [
   {
     company: 'Venture23 Inc',
     role: 'Senior Blockchain Engineer',
-    period: 'Oct 2019 – Present',
+    period: 'Nov 2023 – Mar 2026',
     points: [
       'Contributor to Railgun Protocol',
       'Product Lead for Money Market in Aleo Blockchain',
@@ -40,7 +40,7 @@ export const experience = [
   {
     company: 'Cotiviti Nepal',
     role: 'Associate Software Engineer',
-    period: 'Apr 2019 – Present',
+    period: 'Apr 2019 – Nov 2019',
     points: [
       'PL/SQL coding',
       'Python developer',

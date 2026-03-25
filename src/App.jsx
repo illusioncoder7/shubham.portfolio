@@ -139,6 +139,15 @@ function App() {
         <div className="v4-bg-nodes" />
         <div className="v4-bg-veil" />
       </div>
+      <div className="matrix-rain" aria-hidden="true">
+        {Array.from({ length: 22 }).map((_, i) => (
+          <div key={i} className="matrix-column">
+            <span className="matrix-stream" style={{ "--i": i }}>
+              1010011101010010110100101101010011010010
+            </span>
+          </div>
+        ))}
+      </div>
       <div className="noise v4-noise" aria-hidden="true" />
       <BlockchainSideDecor />
 

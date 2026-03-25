@@ -171,6 +171,59 @@ body {
   }
 }
 
+/* --- Matrix-style falling 1s and 0s --- */
+.matrix-rain {
+  position: fixed;
+  inset: 0;
+  z-index: 500; /* above all content, below global noise */
+  pointer-events: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4vw;
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 1.4vw, 1.15rem);
+  color: #41ccc0;
+  opacity: 0.4;
+  mix-blend-mode: screen;
+}
+.matrix-column {
+  position: relative;
+  flex: 0 0 auto;
+  width: 2ch;
+  height: 200%;
+  overflow: hidden;
+}
+.matrix-stream {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  white-space: pre;
+  text-align: center;
+  letter-spacing: 0.18em;
+  line-height: 1.4;
+   text-shadow: 0 0 8px rgba(65, 204, 192, 0.9);
+  animation: matrix-fall 11s linear infinite;
+  animation-delay: calc(-1.2s * var(--i));
+}
+@keyframes matrix-fall {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
 /* Screen-reader only text helper */
 .sr-only {
   position: absolute;
