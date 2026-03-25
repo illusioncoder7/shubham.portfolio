@@ -330,31 +330,46 @@ body {
   white-space: nowrap;
   max-width: 0;
   border-right: 2px solid var(--color-neon);
-  /* Start typing quickly; reveal within the first ~1s-2s */
-  animation: v4-nav-typewriter-loop 8s linear 0.05s infinite;
+  /* Total idle (hold + post-blink + empty) = 9% of timeline × 16.667s ≈ 1.5s */
+  animation: v4-nav-typewriter-loop 16.667s linear 0.05s infinite;
 }
 
 @keyframes v4-nav-typewriter-loop {
-  0% {
-    max-width: 0;
-    border-right-color: var(--color-neon);
-  }
-  /* typing */
-  12% {
-    max-width: 60ch;
-    border-right-color: var(--color-neon);
-  }
-  /* caret off after it "finishes" (keep text visible) */
-  22%,
-  70% {
-    max-width: 60ch;
-    border-right-color: transparent;
-  }
-  85%,
+  0%,
   100% {
     max-width: 0;
+    border-right-color: var(--color-neon);
+  }
+  /* write — 91% active split ~39:41 with type ≈ 44.36% */
+  44.36% {
+    max-width: 60ch;
+    border-right-color: var(--color-neon);
+  }
+  /* hold + caret blink — ~1.08% of loop ≈ 0.18s */
+  44.7% {
     border-right-color: transparent;
   }
+  45.1% {
+    border-right-color: var(--color-neon);
+  }
+  45.44% {
+    max-width: 60ch;
+    border-right-color: var(--color-neon);
+  }
+  /* erase — ~46.64% of loop */
+  92.08% {
+    max-width: 0;
+    border-right-color: var(--color-neon);
+  }
+  /* post-erase blink — ~0.72% of loop ≈ 0.12s */
+  92.35% {
+    border-right-color: transparent;
+  }
+  92.8% {
+    max-width: 0;
+    border-right-color: var(--color-neon);
+  }
+  /* empty before loop — ~7.2% of loop ≈ 1.2s; total idle 9% ≈ 1.5s */
 }
 
 .v4-nav-link {
