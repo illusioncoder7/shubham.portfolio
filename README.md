@@ -1,6 +1,6 @@
 # Shubham Tiwari — Portfolio
 
-Personal portfolio site: blockchain engineer, smart contracts, DeFi, and ZK. Built with React and Vite, deployed on GitHub Pages.
+Personal portfolio site: blockchain engineer, smart contracts, DeFi, and ZK. Built with React and Vite, deployed on GitHub Pages. **Live at [shubhamtiwari.com.np](https://shubhamtiwari.com.np).**
 
 ## Run locally
 
@@ -21,9 +21,10 @@ Output is in `dist/`. Preview with `npm run preview`.
 
 ## Deploy (GitHub Pages)
 
-- **Live site:** [https://illusioncoder7.github.io/shubham.portfolio/](https://illusioncoder7.github.io/shubham.portfolio/)
+- **Live site (custom domain):** [https://shubhamtiwari.com.np](https://shubhamtiwari.com.np)
+- Also available at: [https://illusioncoder7.github.io/shubham.portfolio/](https://illusioncoder7.github.io/shubham.portfolio/) (asset paths may differ; custom domain is canonical).
 - Push to `main`; the GitHub Action **Deploy to GitHub Pages** builds and deploys from `dist/`.
-- Base path is set to `/shubham.portfolio/` in `vite.config.js` for this repo.
+- Base path in `vite.config.js` is `/` for the custom domain; `public/CNAME` sets `shubhamtiwari.com.np` for GitHub Pages.
 
 ## Project layout
 

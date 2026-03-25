@@ -15,16 +15,16 @@ export const profile = {
   location: 'Lalitpur, Nepal',
   linkedin: 'https://linkedin.com/in/shubhtiwari5',
   github: 'https://github.com/illusioncoder7',
+  telegram: 'https://t.me/codeinception',
   instagram: 'https://www.instagram.com/genesis.shubh/',
   facebook: 'https://www.facebook.com/shubham.tiwari.790',
-  whatsapp: 'https://wa.me/9779867842097',
 };
 
 export const experience = [
   {
     company: 'Venture23 Inc',
     role: 'Senior Blockchain Engineer',
-    period: 'Oct 2019 – Present',
+    period: 'Nov 2023 – Mar 2026',
     points: [
       'Contributor to Railgun Protocol',
       'Product Lead for Money Market in Aleo Blockchain',
@@ -40,7 +40,7 @@ export const experience = [
   {
     company: 'Cotiviti Nepal',
     role: 'Associate Software Engineer',
-    period: 'Apr 2019 – Present',
+    period: 'Apr 2019 – Nov 2019',
     points: [
       'PL/SQL coding',
       'Python developer',

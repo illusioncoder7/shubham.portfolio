@@ -20,7 +20,7 @@ export default function ContactSection({ profile, revealed }) {
             Open to protocol work, audits, and long-term projects. Say hi.
           </p>
 
-          <div className="flex justify-center gap-5 mb-8">
+          <div className="flex flex-wrap justify-center gap-5 mb-8">
             <a
               href={`mailto:${profile.email}`}
               className="py-3 px-6 text-sm font-serif rounded bg-primary text-white border-none no-underline cursor-pointer transition-all duration-250 hover:bg-accent-hover"
@@ -28,12 +28,12 @@ export default function ContactSection({ profile, revealed }) {
               Say Hello
             </a>
             <a
-              href={profile.whatsapp}
+              href={profile.telegram}
               className="py-3 px-6 text-sm font-serif rounded bg-transparent text-neon border border-neon no-underline cursor-pointer transition-all duration-250 hover:bg-primary-dim"
               target="_blank"
               rel="noopener noreferrer"
             >
-              WhatsApp
+              Telegram
             </a>
           </div>
 

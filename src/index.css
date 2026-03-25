@@ -153,6 +153,19 @@ body {
   opacity: 0.03;
 }
 
+/* Screen-reader only text helper */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ===== Responsive Layouts (complex breakpoints that Tailwind can't cleanly handle) ===== */
 .v4-nav {
   display: flex;
