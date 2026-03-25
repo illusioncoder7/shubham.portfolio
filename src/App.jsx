@@ -479,12 +479,12 @@ function App() {
                     Say Hello
                   </a>
                   <a
-                    href={profile.whatsapp}
+                    href={profile.telegram}
                     className="v4-btn v4-btn-outline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    WhatsApp
+                    Telegram
                   </a>
                 </div>
                 <div className="v4-contact-social">

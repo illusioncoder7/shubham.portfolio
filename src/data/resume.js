@@ -15,9 +15,9 @@ export const profile = {
   location: 'Lalitpur, Nepal',
   linkedin: 'https://linkedin.com/in/shubhtiwari5',
   github: 'https://github.com/illusioncoder7',
+  telegram: 'https://t.me/codeinception',
   instagram: 'https://www.instagram.com/genesis.shubh/',
   facebook: 'https://www.facebook.com/shubham.tiwari.790',
-  whatsapp: 'https://wa.me/9779867842097',
 };
 
 export const experience = [

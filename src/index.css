@@ -2115,6 +2115,7 @@ body {
 }
 .v4-contact-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.25rem;
   margin-bottom: 2rem;
