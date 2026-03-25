@@ -117,30 +117,34 @@ function App() {
       <BackgroundEffects />
       <BlockchainSideDecor />
 
-      <Navbar
-        sections={NAV_SECTIONS}
-        activeNav={activeNav}
-        handleNavClick={handleNavClick}
-        baseUrl={baseUrl}
-      />
-
-      <div className="v4-two-column">
-        <HeroSection
-          profile={profile}
-          images={images}
-          baseUrl={baseUrl}
-          handleNavClick={handleNavClick}
-        />
-
-        <main className="v4-main-right-layout font-serif">
+      <div className="flex flex-col md:flex-row p-4 md:p-8 lg:p-12 gap-4 md:gap-8 lg:gap-32">
+        {/* left side of the screen */}
+        <div className="w-full flex flex-col gap-4 md:sticky md:top-8 md:self-start max-md:pt-[58px]">
+          <div className="max-md:fixed max-md:top-0 max-md:inset-x-0 max-md:z-50 max-md:px-4 max-md:pt-4">
+            <Navbar
+              sections={NAV_SECTIONS}
+              activeNav={activeNav}
+              handleNavClick={handleNavClick}
+              baseUrl={baseUrl}
+            />
+          </div>
+          <HeroSection
+            profile={profile}
+            images={images}
+            baseUrl={baseUrl}
+            handleNavClick={handleNavClick}
+          />
+        </div>
+        {/* right side of the screen */}
+        <main className="font-serif md:w-3/5 md:flex-[0_0_60%]">
           <a
             href="#about"
-            className="absolute -top-8 left-0 right-0 block text-center text-[1.22rem] font-semibold text-neon no-underline overflow-hidden hover:text-neon-bright transition-colors duration-200"
+            className="block text-center text-[1.22rem] font-semibold text-neon no-underline overflow-hidden hover:text-neon-bright transition-colors duration-200 "
             onClick={handleNavClick}
             aria-label="Home"
           >
             <span className="inline-block w-[min(60ch,100%)] max-w-full min-w-0 overflow-hidden align-middle">
-              <span className="v4-nav-logo-typewriter text-neon tracking-[0.02em]">
+              <span className="v4-nav-logo-typewriter text-neon tracking-[0.02em] text-[0.75rem] md:text-[1rem]">
                 My code is poetry in a language you don't speak
               </span>
             </span>

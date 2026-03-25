@@ -14,9 +14,9 @@ export default function Navbar({
   baseUrl,
 }) {
   return (
-    <nav className="v4-nav">
+    <nav className="flex w-full">
       <div className="flex-1 flex justify-start items-center min-w-0">
-        <div className="v4-nav-card flex justify-center items-center w-full py-2 px-2 h-[50px] box-border bg-card-soft border border-neon-border rounded-[14px] shadow-card max-md:w-[min(100%,720px)] max-md:m-0 max-md:overflow-hidden">
+          <div className="v4-nav-card flex justify-center items-center w-full py-2 px-2 h-[50px] box-border bg-card-soft border border-neon-border rounded-[14px] shadow-card max-md:w-[min(100%,720px)] max-md:m-0 max-md:overflow-hidden max-md:backdrop-blur-xl max-md:bg-[rgba(30,58,95,0.75)]">
           <ul className="flex justify-evenly items-center list-none m-0 p-0 w-full gap-1 text-sm font-serif max-md:gap-0.5">
             {sections.map(({ id, label }) => (
               <li key={id} className="relative max-md:min-w-0">
