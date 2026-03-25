@@ -117,9 +117,9 @@ function App() {
       <BackgroundEffects />
       <BlockchainSideDecor />
 
-      <div className="flex flex-col md:flex-row p-4 md:p-8 lg:p-12 gap-4 md:gap-8 lg:gap-32">
+      <div className="flex flex-col md:flex-row md:items-start p-4 md:p-8 lg:p-12 gap-4 md:gap-8 lg:gap-32">
         {/* left side of the screen */}
-        <div className="w-full flex flex-col gap-4 md:sticky md:top-8 md:self-start max-md:pt-[58px]">
+        <div className="v4-left-sticky w-full flex flex-col gap-4 max-md:pt-[58px]">
           <div className="max-md:fixed max-md:top-0 max-md:inset-x-0 max-md:z-50 max-md:px-4 max-md:pt-4">
             <Navbar
               sections={NAV_SECTIONS}

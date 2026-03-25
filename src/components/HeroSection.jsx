@@ -28,7 +28,7 @@ export default function HeroSection({
                 <span className="text-neon font-normal opacity-95">&#125;</span>
               </div>
 
-              <div className="v4-hero-code-line block min-h-[1.5em] whitespace-pre-wrap wrap-break-word mt-1.5 text-center">
+              <div className="v4-hero-code-line block min-h-[1.5em] whitespace-pre-wrap wrap-break-word mt-1.5">
                 <span className="text-neon font-normal opacity-95">&quot;</span>
                 <span className="text-muted">
                   {profile.shortBio || profile.tagline}

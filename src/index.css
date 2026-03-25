@@ -32,14 +32,23 @@
 /* ===== Base ===== */
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: clip; /* clip prevents horizontal overflow without creating a new scroll container (unlike hidden, which breaks position:sticky) */
 }
 body {
   font-family: var(--font-serif);
   color: var(--color-foreground);
   background: var(--color-bg);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: clip; /* clip prevents horizontal overflow without creating a scroll container — unlike hidden which breaks position:sticky on descendants */
+}
+
+/* ===== Sticky Left Panel (desktop) ===== */
+@media (min-width: 768px) {
+  .v4-left-sticky {
+    position: sticky;
+    top: 2rem;
+    align-self: flex-start;
+  }
 }
 
 /* ===== Background Effects ===== */
