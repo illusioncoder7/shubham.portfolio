@@ -60,7 +60,7 @@ export default function HeroSection({
 
               <div className="v4-hero-code-line v4-hero-socials-inner mt-4 pt-1 mb-4 flex flex-wrap items-center gap-2">
                 <a
-                  href={baseUrl("/Shubham_Resume.pdf")}
+                  href={baseUrl("/SHUBHAM_TIWARI_Resume_10_3.docx")}
                   className="v4-nav-btn w-full inline-flex justify-center px-3 py-1.5 text-xs font-serif font-medium text-neon bg-card-soft border border-card-border rounded-lg no-underline shadow-card backdrop-blur-md"
                   target="_blank"
                   rel="noopener noreferrer"

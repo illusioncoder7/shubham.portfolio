@@ -1,0 +1,568 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>RAILGUN - On-chain ZK Privacy Ecosystem</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="RAILGUN">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <meta name="description" content="RAILGUN is a DeFi privacy toolkit powering a rich on-chain Zero-Knowledge privacy ecosystem." />
+        <meta name="keywords" content="RAILGUN, ethereum, polygon, arbitrum, privacy, web3, zero knowledge, zkSNARK, defi, ppoi, private proofs of innocence" />
+
+        <!-- favicon icon -->
+        <link rel="icon" href="../img/favicon.png" />
+        <link
+        rel="icon"
+        type="image/png"
+        href="../img/favicon-dark.png"
+        media="(prefers-color-scheme: dark)"
+        />
+        <link rel="apple-touch-icon" href="images/railgun-touch-fav-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/railgun-touch-fav-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/railgun-touch-fav-114x114.png">
+
+        <!-- Open Graph Tags -->
+        <meta property="og:title" content="RAILGUN - On-chain ZK Privacy Ecosystem" />
+        <meta property="og:site_name" content="RAILGUN" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://railgun.org" />
+        <meta property="og:description" content="RAILGUN is a DeFi privacy toolkit powering a rich on-chain Zero-Knowledge privacy ecosystem." />
+        <meta property="twitter:title" content="RAILGUN - On-chain ZK Privacy Ecosystem" />
+        <meta property="twitter:description" content="RAILGUN is a DeFi privacy toolkit powering a rich on-chain Zero-Knowledge privacy ecosystem." />
+
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" type="text/css" href="css/font-icons.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    </head>
+    <body data-mobile-nav-style="classic">
+        <!-- start page loader -->
+        <div class="page-loader"></div>
+        <!-- end page loader -->
+
+        <!-- start header -->
+        <header class="header-with-topbar">
+            <nav class="navbar navbar-expand-lg top-space navbar-light bg-white header-light fixed-top">
+                <div class="container-lg nav-header-container">
+                    <div class="col-6 col-lg-2 me-auto ps-lg-0">
+                      <a class="navbar-brand padding-10px-top mb-0" href="/">
+                          <lottie-player src="js/railgun/railgun-logo.json" background="transparent"  speed="1"  style="width: 280px;" loop autoplay></lottie-player>
+                      </a>
+                    </div>
+                    <div class="col-auto menu-order px-lg-0">
+                        <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                        </button>
+                        <div class="collapse navbar-collapse text-railgun-dark-navy text-right sm-no-margin xs-no-margin md-no-margin" id="navbarNav">
+                            <ul class="navbar-nav alt-font">
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a href="wallets.html" class="nav-link">WALLETS</a>
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a href="javascript:void(0);" data-bs-toggle="dropdown" class="nav-link">ABOUT</a>
+                                    <i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="features.html"><span class="text-medium-railgun font-weight-400 text-railgun-dark-navy">Features</span></a></li>
+                                        <li><a href="bug-bounty.html"><span class="text-medium-railgun font-weight-400 text-railgun-dark-navy">Bug Bounty</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a href="javascript:void(0);" data-bs-toggle="dropdown" class="nav-link">DOCS</a>
+                                    <i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="https://docs.railgun.org/wiki" target="_blank"><span class="text-medium-railgun font-weight-400 text-railgun-dark-navy">RAILGUN Wiki</span></a></li>
+                                        <li><a href="https://docs.railgun.org/developer-guide" target="_blank"><span class="text-medium-railgun font-weight-400 text-railgun-dark-navy"><nobr>RAILGUN Developer Guide</nobr></span></a></li>
+                                        <li><a href="https://assets.railgun.org/docs/audits" target="_blank"><span class="text-medium-railgun font-weight-400 text-railgun-dark-navy">Audit Reports</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a href="javascript:void(0);" data-bs-toggle="dropdown" class="nav-link">DEVELOPERS</a>
+                                    <i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="integrations.html"><span class="text-medium-railgun font-weight-400 text-railgun-dark-navy">Integrations</span></a></li>
+                                        <li><a href="https://docs.railgun.org/developer-guide" target="_blank"><span class="text-medium-railgun font-weight-400 text-railgun-dark-navy"><nobr>RAILGUN Developer Guide</nobr></span></a></li>
+                                        <li><a href="https://github.com/Railgun-Community/cookbook" target="_blank"><span class="text-medium-railgun font-weight-400 text-railgun-dark-navy"><nobr>RAILGUN Cookbook</nobr></span></a></li>
+                                        <li><a href="https://github.com/Railgun-Community/wallet" target="_blank"><span class="text-medium-railgun font-weight-400 text-railgun-dark-navy"><nobr>Wallet SDK</nobr></span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto text-end pe-0 font-size-0">
+                        <div class="header-push-button d-lg-inline-block">
+                            <a href="https://twitter.com/railgun_project" target="_blank" aria-label="Twitter"><i class="fab fa-twitter icon-railgun-menu text-center text-railgun-dark-navy"></i></a>
+                            <a href="https://t.me/railgun_privacy" target="_blank" aria-label="Telegram"><i class="fab fa-telegram icon-railgun-menu text-center text-railgun-dark-navy"></i></a>
+                            <a href="https://discord.gg/jgUQjkYWzh" target="_blank" aria-label="Discord"><i class="fab fa-discord icon-railgun-menu text-center text-railgun-dark-navy"></i></a>
+                            <a href="https://github.com/Railgun-Community" target="_blank" aria-label="GitHub"><i class="fab fa-github icon-railgun-menu text-center text-railgun-dark-navy"></i></a>
+                            <a href="https://docs.railgun.org/wiki" target="_blank" aria-label="Docs"><img src="./svg/gitbook-icon.svg" class="gitbook-icon icon-railgun-menu text-center text-railgun-dark-navy" /></a>
+                            <a href="https://medium.com/@Railgun_Project" target="_blank" aria-label="Medium"><i class="fab fa-brands fa-medium icon-railgun-menu-last text-center text-railgun-dark-navy"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-auto text-end pe-0 font-size-0">
+                        <div class="header-push-button d-none d-lg-inline-block hidden-xs">
+                            <a href="javascript:void(0);" class="push-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- end header -->
+
+        <!-- start push -->
+        <div class="push-menu padding-50px-lr bg-light-blue">
+            <a href="javascript:void(0);" class="close-menu text-railgun-dark-navy"><i class="fas fa-times"></i></a>
+            <div class="push-menu-wrapper text-center" data-scroll-options='{ "theme": "dark" }'>
+                <div class="container margin-ten-top margin-twenty-bottom">
+                    <a href="javascript:void(0);" class="footer-logo"><img width="250px" src="svg/railgun-logo-black.svg" data-at2x="svg/railgun-logo-black.svg" alt=""></a>
+                </div>
+                <h3 class="text-railgun-dark-navy alt-font font-weight-400 letter-spacing-minus-3px">
+                  On-Chain<br />ZK Privacy</h3>
+                <span class="alt-font text-large text-railgun-dark-navy font-weight-300 d-block">Secure. Composable. Encrypted.</span>
+                <div class="margin-twenty-tb">
+                  <a href="wallets.html" class="btn btn-hero-noicon margin-15px-bottom btn-box-shadow d-table d-sm-inline-block xs-margin-auto-lr xs-margin-15px-bottom border-radius-6px box-shadow-small">
+                    Use RAILGUN</a>
+                  <a href="#community-disclaimer" class="btn btn-hero-noicon btn-box-shadow btn-white d-table d-sm-inline-block xs-margin-auto-lr xs-margin-15px-bottom border-radius-6px box-shadow-small popup-with-move-anim">
+                    Stake $RAIL</a>
+                </div>
+                <div class="text-center elements-social social-icon-style-02 padding-2-rem-top">
+                    <span class="alt-font text-medium margin-3-rem-bottom w-70 mx-auto text-railgun-dark-navy d-inline-block line-height-26px lg-margin-2-rem-bottom">
+                        Learn more about privacy. Connect with our Web3 community, privacy supporters and advocates.
+                    </span>
+                    <ul class="small-icon dark ">
+                        <li><a href="https://twitter.com/railgun_project" target="_blank" aria-label="Twitter"><i class="fab fa-twitter text-railgun-dark-navy icon-country"></i></a></li>
+                        <li><a href="https://t.me/railgun_privacy" target="_blank" aria-label="Telegram"><i class="fab fa-telegram text-railgun-dark-navy icon-country"></i></a></li>
+                        <li><a href="https://discord.gg/jgUQjkYWzh" target="_blank" aria-label="Discord"><i class="fab fa-discord text-railgun-dark-navy icon-country"></i></a></li>
+                        <li><a href="https://medium.com/@Railgun_Project" target="_blank" aria-label="Medium"><i class="fa-brands fa-medium text-railgun-dark-navy icon-country"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="community-disclaimer" class="col-12 col-xl-3 col-lg-6 col-sm-9 mx-auto bg-white modal-popup-main padding-2-half-rem-all mfp-hide border-radius-6px sm-padding-2-half-rem-lr text-center zoom-anim-dialog">
+                <div class="author">
+                    <div class="margin-five-bottom">
+                      <img width="250px" src="svg/railgun-logo-black.svg" alt=""></a>
+                    </div>
+                    <div class="w-70 d-inline-block align-middle margin-10px-top">
+                        <span class="d-block text-large text-uppercase text-railgun-dark-navy text-decoration-underline">DISCLAIMER</span>
+                    </div>
+                </div>
+                <span class="text-railgun-dark-navy"></br>This link takes you to an external domain:</span></br><span class="text-railgun-orange">https://rail.governance.fi/</span><br /></br>
+                <a href="https://rail.governance.fi/" target="_blank" class="btn btn-large btn-dark-navy border-radius-6px margin-10px-top">Proceed</a>
+                <a href="javascript:void(0);" class="btn btn-large btn-dark-navy border-radius-6px popup-modal-dismiss margin-10px-top">Close</a>
+            </div>
+        </div>
+        <!-- end push -->
+
+        <!-- start RAILGUN hero section -->
+        <section class="rail-background-hero">
+          <div class="container">
+              <div class="row">
+                  <div class="text-center padding-ten-tb">
+                      <h1 class="alt-font d-block text-white cd-headline slide margin-50px-top line-height-60px">
+                          <span class="title-large text-white font-weight-200">On-chain</span><br /><br />
+                          <span class="title-extra-large"><nobr>ZK Privacy</nobr><br /></span>
+                          <span class="cd-words-wrapper text-base-color font-weight-500">
+                              <b class="is-visible">for DeFI</b>
+                              <b>for Ethereum</b>
+                              <b>for Arbitrum</b>
+                              <b>for NFTs</b>
+                              <b>for Polygon</b>
+                              <b>for dApps</b>
+                          </span>
+                      </h1>
+                  </div>
+              </div>
+          </div>
+          <div class="row justify-content-center margin-ten-bottom md-margin-fifteen-bottom xs-margin-ten-bottom">
+              <div class="col-12 col-xl-12 col-lg-8 d-flex flex-column justify-content-center h-100 text-center">
+                  <div class="btn-dual">
+                      <a href="wallets.html" class="btn btn-hero-noicon btn-box-shadow btn-orange margin-25px-right d-table d-sm-inline-block xs-margin-auto-lr xs-margin-15px-bottom border-radius-6px box-shadow-small">
+                        Use RAILGUN</a>
+                      <a href="#community-disclaimer" class="btn btn-hero-noicon btn-box-shadow btn-white margin-25px-right d-table d-sm-inline-block xs-margin-auto-lr xs-margin-15px-bottom border-radius-6px box-shadow-small popup-with-move-anim">
+                        Stake $RAIL</a>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <!-- end RAILGUN hero section -->
+
+ <!-- start section -->
+        <section class="section rail-background-1 xs-padding-five-left">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-left margin-eight-bottom">
+                        <h2 class="title-railgun-h2 alt-font font-weight-600 title-large text-railgun-dark-navy letter-spacing-minus-3px line-height-120px mt-auto mb-0">
+                          User compliance tools</h2>
+                    </div>
+                </div>
+                <div class="row row-cols-2 row-cols-lg-3 row-cols-md-2 ">
+                    <div class="col last-paragraph-no-margin md-margin-30px-bottom sm-margin-30px-bottom">
+                        <div class="margin-two-bottom">
+                            <lottie-player src="js/railgun/rail-create-icon.json" background="transparent"  speed="1"  style="width: 128px;" loop autoplay></lottie-player>
+                        </div>
+                        <div class="alt-font font-weight-600 title-extra-small-2 text-railgun-dark-navy d-block letter-spacing-minus-1px sm-letter-spacing-minus-1-half margin-five-bottom">
+                            VIEWING KEYS
+                        </div>
+                        <div class="text-large text-railgun-dark-navy font-weight-500 alt-font d-block margin-1-rem-tb">
+                            <span class="w-75 h-1px d-inline-block align-middle bg-slate-blue margin-10px-right lg-w-85 sm-w-90 xs-margin-5px-right"></span>
+                            01</div>
+                        <p class="w-90 lg-w-90 text-railgun-dark-navy">Shareable read only private key that reveals origin of funds.</p>
+                        <a target="_blank" href="https://docs.railgun.org/wiki/learn/wallets-and-keys#viewing-keys" class="section-link btn btn-extra-large btn-dark-navy margin-five-tb border-radius-6px sm-margin-50px-bottom xs-margin-50px-bottom"><nobr>Docs</nobr></a>
+                    </div>
+                    <div class="col last-paragraph-no-margin md-margin-30px-bottom sm-margin-30px-bottom">
+                            <img class="privacy-pools-img margin-15px-right" src="svg/rail-innocence-icon.svg" alt="RAILGUN private proofs of innocence icon">
+                        <div class="alt-font font-weight-600 title-extra-small-2 text-railgun-dark-navy d-block letter-spacing-minus-1px sm-letter-spacing-minus-1-half margin-five-bottom">
+                            PRIVATE PROOFS OF INNOCENCE
+                        </div>
+                        <div class="text-large text-railgun-dark-navy font-weight-500 alt-font d-block margin-1-rem-tb">
+                            <span class="w-75 h-1px d-inline-block align-middle bg-slate-blue margin-10px-right lg-w-85 sm-w-90 xs-margin-5px-right"></span>
+                            02</div>
+                        <p class="w-90 lg-w-90 text-railgun-dark-navy">Zero Knowledge proofs of non-interaction which keeps the anonymity set clean of bad actors.</p>
+                        <a target="_blank" href="https://docs.railgun.org/wiki/assurance/privacy-pools-private-proofs-of-innocence" class="section-link btn btn-extra-large btn-dark-navy margin-five-tb border-radius-6px sm-margin-50px-bottom xs-margin-50px-bottom"><nobr>Docs</nobr></a>
+                    </div>
+                    <div class="col last-paragraph-no-margin">
+                        <div class="margin-two-bottom">
+                          <lottie-player src="js/railgun/rail-transact-icon.json"
+                          background="transparent"  speed="1"  style="width: 128px;" loop autoplay></lottie-player>
+                        </div>
+                        <div class="alt-font font-weight-600 title-extra-small-2 text-railgun-dark-navy d-block letter-spacing-minus-1px sm-letter-spacing-minus-1-half margin-five-bottom">
+                            TAX INTEGRATIONS
+                        </div>
+                        <div class="text-large text-railgun-dark-navy font-weight-500 alt-font d-block margin-1-rem-tb">
+                            <span class="w-75 h-1px d-inline-block align-middle bg-slate-blue margin-10px-right lg-w-85 sm-w-90 xs-margin-5px-right"></span>
+                            03</div>
+                        <p class="w-90 lg-w-90 text-railgun-dark-navy">Quick and easy exports of transaction history for use in crypto tax calculation software.</p>
+                        <a target="_blank" href="https://docs.railgun.org/wiki/assurance/koinly-tax-exports" class="section-link btn btn-extra-large btn-dark-navy margin-five-tb border-radius-6px sm-margin-50px-bottom xs-margin-50px-bottom"><nobr>Docs</nobr></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        
+        <!-- start section -->
+        <section class="big section overlap-height padding-5px-top padding-five-bottom">
+            <div class="container">
+                <div class="row padding-ten-tb">
+                    <div class="col-12 col-lg-6 md-margin-15px-bottom xs-margin-ten-bottom xs-padding-ten-left">
+                        <h2 class="title-railgun-h2 alt-font font-weight-600 title-extra-large text-railgun-dark-navy letter-spacing-minus-5px line-height-120px sm-letter-spacing-minus-5px">What is<br />
+                        <span class="title-large letter-spacing-minus-2px font-weight-300">RAILGUN?</span></h2>
+                    </div>
+                    <div class="col-12 col-lg-6 md-margin-15px-bottom">
+                        <lottie-player src="js/railgun/what-is-railgun.json" background="transparent" speed="0.7" loop autoplay></lottie-player>
+                    </div>
+                </div>
+                <video class="padding-five-bottom" width="auto" height="auto" loop="true" autoplay="true" controls="" controlsList="nodownload" muted class="html-video" poster="https://via.placeholder.com/1920x1080">
+                    <source type="video/mp4" src="img/media/railgun-explainer.mp4" />
+                </video>
+                <div class="container text-railgun-dark-navy margin-five-top">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-lg-4 col-md-6 col-sm-8">
+                            <div class="alt-font font-weight-600 title-small text-railgun-dark-navy d-block letter-spacing-minus-1px sm-letter-spacing-minus-1-half margin-five-bottom xs-margin-10px-bottom">
+                                ZK SMART<br /> CONTRACTS
+                            </div>
+                            <p class="text-railgun-h2 alt-font font-weight-400 text-railgun-dark-navy d-block mb-0 padding-2-half-rem-right letter-spacing-minus-1px lg-no-padding-right text-extra-large">RAILGUN is a smart contract system that enables <nobr>Zero-Knowledge</nobr> Privacy for any <nobr>on-chain</nobr> dApp.</p>
+                            <a href="integrations.html" class="section-link btn btn-extra-large btn-dark-navy margin-five-tb border-radius-6px sm-margin-50px-bottom xs-margin-50px-bottom"><nobr>Discover Integrations</nobr></a>
+                        </div>
+                        <div class="col-11 col-lg-4 col-md-6 col-sm-8">
+                            <div class="alt-font font-weight-600 title-small text-railgun-dark-navy d-block letter-spacing-minus-1px sm-letter-spacing-minus-1-half margin-five-bottom xs-margin-10px-bottom">
+                                FULLY<br /> DECENTRALIZED
+                            </div>
+                            <p class="text-railgun-h2 alt-font font-weight-400 text-railgun-dark-navy d-block mb-0 padding-2-half-rem-right letter-spacing-minus-1px lg-no-padding-right text-extra-large">There is no RAILGUN company – RAILGUN is a system of smart contracts supported by <nobr>fully-decentralized</nobr> governance.</p>
+                            <a href="https://docs.railgun.org/wiki/rail-token/protocol-governance" target="_blank" class="section-link btn btn-extra-large btn-dark-navy margin-five-tb border-radius-6px sm-margin-50px-bottom xs-margin-50px-bottom"><nobr>RAILGUN Governance</nobr></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="section rail-background-1 xs-padding-five-left">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-left margin-eight-bottom">
+                        <h2 class="title-railgun-h2 alt-font font-weight-600 title-large text-railgun-dark-navy letter-spacing-minus-3px line-height-120px mt-auto mb-0">
+                          How <span class="title-large font-weight-300">it works</span></h2>
+                    </div>
+                </div>
+                <div class="row row-cols-2 row-cols-lg-4 row-cols-md-2 justify-content-center">
+                    <div class="col last-paragraph-no-margin md-margin-30px-bottom sm-margin-30px-bottom">
+                        <div class="margin-two-bottom">
+                            <lottie-player src="js/railgun/rail-create-icon.json" background="transparent"  speed="1"  style="width: 128px;" loop autoplay></lottie-player>
+                        </div>
+                        <div class="alt-font font-weight-600 title-extra-small-2 text-railgun-dark-navy d-block letter-spacing-minus-1px sm-letter-spacing-minus-1-half margin-five-bottom">
+                            CREATE
+                        </div>
+                        <div class="text-large text-railgun-dark-navy font-weight-500 alt-font d-block margin-1-rem-tb">
+                            <span class="w-75 h-1px d-inline-block align-middle bg-slate-blue margin-10px-right lg-w-85 sm-w-90 xs-margin-5px-right"></span>
+                            01</div>
+                        <p class="w-90 lg-w-90 text-railgun-dark-navy">Setup your <nobr>non-custodial</nobr> RAILGUN Wallet with a private 0zk address.</p>
+                    </div>
+                    <div class="col last-paragraph-no-margin md-margin-30px-bottom sm-margin-30px-bottom">
+                        <div class="margin-two-bottom">
+                          <lottie-player src="js/railgun/rail-shield-icon.json"
+                          background="transparent"  speed="1"  style="width: 128px;" loop autoplay></lottie-player>
+                        </div>
+                        <div class="alt-font font-weight-600 title-extra-small-2 text-railgun-dark-navy d-block letter-spacing-minus-1px sm-letter-spacing-minus-1-half margin-five-bottom">
+                            SHIELD
+                        </div>
+                        <div class="text-large text-railgun-dark-navy font-weight-500 alt-font d-block margin-1-rem-tb">
+                            <span class="w-75 h-1px d-inline-block align-middle bg-slate-blue margin-10px-right lg-w-85 sm-w-90 xs-margin-5px-right"></span>
+                            02</div>
+                        <p class="w-90 lg-w-90 text-railgun-dark-navy">Shield any ERC-20 token or NFT into a 0zk address of your choice.</p>
+                    </div>
+                    <div class="col last-paragraph-no-margin">
+                        <div class="margin-two-bottom">
+                          <lottie-player src="js/railgun/rail-transact-icon.json"
+                          background="transparent"  speed="1"  style="width: 128px;" loop autoplay></lottie-player>
+                        </div>
+                        <div class="alt-font font-weight-600 title-extra-small-2 text-railgun-dark-navy d-block letter-spacing-minus-1px sm-letter-spacing-minus-1-half margin-five-bottom">
+                            TRANSACT
+                        </div>
+                        <div class="text-large text-railgun-dark-navy font-weight-500 alt-font d-block margin-1-rem-tb">
+                            <span class="w-75 h-1px d-inline-block align-middle bg-slate-blue margin-10px-right lg-w-85 sm-w-90 xs-margin-5px-right"></span>
+                            03</div>
+                        <p class="w-90 lg-w-90 text-railgun-dark-navy">Once shielded, tokens, balances, and transactions are encrypted.</p>
+                    </div>
+                    <div class="col last-paragraph-no-margin">
+                        <div class="margin-two-bottom">
+                          <lottie-player src="js/railgun/rail-use-icon.json"
+                          background="transparent"  speed="1"  style="width: 128px;" loop autoplay></lottie-player>
+                        </div>
+                        <div class="alt-font font-weight-600 title-extra-small-2 text-railgun-dark-navy d-block letter-spacing-minus-1px sm-letter-spacing-minus-1-half margin-five-bottom">
+                            USE
+                        </div>
+                        <div class="text-large text-railgun-dark-navy font-weight-500 alt-font d-block margin-1-rem-tb">
+                            <span class="w-75 h-1px d-inline-block align-middle bg-slate-blue margin-10px-right lg-w-85 sm-w-90 xs-margin-5px-right"></span>
+                            04</div>
+                        <p class="w-90 lg-w-90 text-railgun-dark-navy">Transfer assets between 0zk addresses and use DeFi anonymously.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <section class="section xs-padding-five-left padding-five-bottom xs-padding-ten-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 margin-five-bottom">
+                        <h2 class="title-railgun-h2 alt-font font-weight-600 title-large text-railgun-dark-navy letter-spacing-minus-3px line-height-120px mt-auto mb-0">
+                          Unique <span class="title-large font-weight-300">Approach</span></h2>
+                    </div>
+                </div>
+                <div class="row text-railgun-dark-navy xs-padding-ten-bottom">
+                    <div class="col-12 col-lg-6 col-md-6 padding-five-tb">
+                        <div class="w-90">
+                            <img class="w-100 margin-ten-bottom" src="svg/on-chain-simplicity.svg" alt="RAILGUN brings on-Chain simplicity">
+                            <h4 class="text-railgun-alt-font font-weight-600 d-block padding-2-half-rem-right letter-spacing-minus-1px lg-no-padding-right">On-Chain Simplicity</h4>
+                            <p class="xs-margin-ten-tb">Privacy with on-chain <nobr>zk-SNARKs</nobr> for existing ecosystems. RAILGUN works simply with all apps, assets, and liquidity.</p>
+                            <a href="https://docs.railgun.org/wiki/learn/privacy-system/zero-knowledge-cryptography" target="_blank" class="btn btn-extra-large btn-dark-navy border-radius-6px">About ZK-Snarks</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 padding-five-tb">
+                        <div class="w-90">
+                            <img class="w-100 margin-ten-bottom" src="svg/feature-complete.svg" alt="RAILGUN is feature complete">
+                            <h4 class="alt-font font-weight-600 text-railgun-dark-navy d-block padding-2-half-rem-right letter-spacing-minus-1px lg-no-padding-right">Feature Complete</h4>
+                            <p class="xs-margin-ten-tb">Full private DeFi experience with the RAILGUN ecosystem. Swap, transfer, lend, and earn on your preferred chain across desktop, web, or mobile.</p>
+                            <a href="features.html" class="btn btn-extra-large btn-dark-navy border-radius-6px">Full list of features</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-railgun-dark-navy">
+                    <div class="col-12 col-lg-6 col-md-6 padding-five-tb">
+                        <div class="w-90">
+                            <img class="w-100 xs-w-100 margin-ten-bottom" src="svg/no-compromises.svg" alt="RAILGUN has no compromises">
+                            <h4 class="alt-font font-weight-600 text-railgun-dark-navy d-block padding-2-half-rem-right letter-spacing-minus-1px lg-no-padding-right">No Compromises</h4>
+                            <p class="-xs-margin-ten-tb">No bridges, no standalone chain, no fragmented liquidity. RAILGUN is as secure and as usable as the underlying chain.</p>
+                            <a href="https://docs.railgun.org/wiki/learn/overview#benefits-and-use-cases-of-railgun" target="_blank" class="btn btn-extra-large btn-dark-navy border-radius-6px">See all benefits</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 padding-five-tb">
+                        <div class="w-90">
+                            <img class="w-100 margin-ten-bottom" src="svg/multichain-composability.svg" alt="RAILGUN is multichain privacy" >
+                            <h4 class="alt-font font-weight-600 text-railgun-dark-navy d-block padding-2-half-rem-right letter-spacing-minus-1px lg-no-padding-right">Multichain Privacy</h4>
+                            <p class="xs-margin-ten-tb">Easily add RAILGUN privacy to your dApp on Ethereum, Polygon, BSC, and Arbitrum with RAILGUN Quickstart SDK or RAILGUN Connect.</p>
+                            <a href="https://docs.railgun.org/wiki/learn/integrating-railgun/railgun-sdks" target="_blank" class="btn btn-extra-large btn-dark-navy border-radius-6px">Explore Integrations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="section rail-background-2 no-padding-bottom bg-light-blue">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-left margin-three-bottom xs-padding-five-left">
+                        <h2 class="title-railgun-h2 alt-font font-weight-600 title-large text-railgun-dark-navy letter-spacing-minus-3px line-height-120px mt-auto mb-0">
+                          Do more with <span class="title-large font-weight-300">RAILGUN</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-railgun-dark-navy margin-five-top">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8">
+                        <div class="testimonials testimonials-style-03 last-paragraph-no-margin">
+                            <div class="border-radius-5px bg-white box-shadow-medium box-shadow-extra-large-hover padding-3-rem-lr padding-2-rem-tb margin-35px-bottom lg-padding-2-rem-lr">
+                                <img class="w-95px h-95px margin-15px-right" src="svg/rail-dev-icon.svg" alt="RAILGUN Developers">
+                                <div class="d-inline-block margin-twenty-bottom xs-margin-ten-bottom">
+                                    <span class="alt-font text-large font-weight-500 line-height-24px text-railgun-dark-navy d-block">DEVELOPERS</span>
+                                </div>
+                                <p>Manage on-chain finances with account level privacy.</br> Use DeFi without leaking your data or alpha.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8">
+                        <div class="testimonials testimonials-style-03 last-paragraph-no-margin">
+                            <div class="border-radius-5px bg-white box-shadow-medium box-shadow-extra-large-hover padding-3-rem-lr padding-2-rem-tb margin-35px-bottom lg-padding-2-rem-lr">
+                                <img class="w-95px h-95px margin-15px-right" src="svg/rail-defi-icon.svg" alt="RAILGUN DeFi Users">
+                                <div class="d-inline-block margin-twenty-bottom xs-margin-ten-bottom">
+                                    <span class="alt-font text-large font-weight-500 line-height-24px text-railgun-dark-navy d-block">DEFI USERS</span>
+                                </div>
+                                <p>Manage your finances with the level of privacy you deserve. DeFi with RAILGUN ensures you can use the apps you love without leaking your valuable data.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8">
+                        <div class="testimonials testimonials-style-03 last-paragraph-no-margin">
+                            <div class="border-radius-5px bg-white box-shadow-medium box-shadow-extra-large-hover padding-3-rem-lr padding-2-rem-tb margin-35px-bottom lg-padding-2-rem-lr">
+                                <img class="w-95px h-95px margin-15px-right" src="svg/rail-community-icon.svg" alt="ACTIVE GOVERNANCE">
+                                <div class="d-inline-block margin-twenty-bottom xs-margin-ten-bottom">
+                                    <span class="alt-font text-large font-weight-500 line-height-24px text-railgun-dark-navy d-block">ACTIVE GOVERNANCE</span>
+                                </div>
+                                <p>Stake tokens to take part in and vote in governance as well as earn <a href="https://docs.railgun.org/wiki/rail-token/rail-active-governor-rewards" target="_blank">Active Governor Rewards.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container padding-five-tb">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-12 col-lg-6 col-sm-8 text-center margin-2-rem-bottom">
+                        <h3 class="text-railgun-partners alt-font text-railgun-dark-navy font-weight-600 letter-spacing-minus-1px">Partners</h3>
+                    </div>
+                </div>
+                <div class="swiper-container text-center xs-margin-ten-bottom" data-slider-options='{ "slidesPerView": 0, "loop": true, "autoplay": { "delay": 2000, "disableOnInteraction": true }, "breakpoints": { "1200": { "slidesPerView": 6 }, "992": { "slidesPerView": 4 }, "768": { "slidesPerView": 3 }, "392": { "slidesPerView": 2 } } }'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide railgun-slider-image client-logo-style-03 padding-two-right"><a target="_blank" href="https://www.0x.org/"><img alt="" src="svg/partners/0x.svg"></a></div>
+                        <div class="swiper-slide railgun-slider-image client-logo-style-03 padding-two-right"><a target="_blank" href="https://railway.xyz/"><img alt="" src="svg/partners/railway.png"></a></div>
+                        <div class="swiper-slide railgun-slider-image client-logo-style-03 padding-two-right"><a target="_blank" href="https://arbitrum.io/"><img alt="" src="svg/partners/arbitrum.svg"></a></div>
+                        <div class="swiper-slide railgun-slider-image client-logo-style-03 padding-two-right"><a target="_blank" href="https://waku.org/"><img alt="" src="svg/partners/waku.svg"></a></div>
+                        <div class="swiper-slide railgun-slider-image client-logo-style-03 padding-two-right"><a target="_blank" href="https://ldcap.com/"><img alt="" src="svg/partners/ld.svg"></a></div>
+                        <div class="swiper-slide railgun-slider-image client-logo-style-03 padding-two-right"><a target="_blank" href="https://renproject.io/"><img alt="" src="svg/partners/ren.svg"></a></div>
+                        <div class="swiper-slide railgun-slider-image client-logo-style-03 padding-two-right"><a target="_blank" href="https://polygon.technology/"><img alt="" src="svg/partners/polygon.svg"></a></div>
+                        <div class="swiper-slide railgun-slider-image client-logo-style-03 padding-two-right"><a target="_blank" href="https://www.metis.io/"><img alt="" src="svg/partners/metis.svg"></a></div>
+                        <div class="swiper-slide railgun-slider-image client-logo-style-03 padding-two-right"><a target="_blank" href="https://unstoppabledomains.com/"><img alt="" src="svg/partners/unstoppable-domains.svg"></a></div>
+                        <div class="swiper-slide railgun-slider-image client-logo-style-03 padding-two-right"><a target="_blank" href="https://koinly.io/"><img alt="" src="svg/partners/koinly.svg"></a></div>
+                        <div class="swiper-slide railgun-slider-image client-logo-style-03 padding-two-right"><a target="_blank" href="https://beefy.com/"><img alt="" src="svg/partners/beefy.svg"></a></div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <section class="cover-background" style="background: url('img/bg/bg-icons.png')">
+            <div class="container xs-padding-five-left">
+                <div class="row">
+                    <div class="col-12 col-xl-7 col-lg-7">
+                        <div class="margin-25px-bottom text-white alt-font">Private smart contract integrations</div>
+                        <h3 class="alt-font text-white font-weight-500 margin-40px-bottom">Learn how to integrate privacy in your project with <nobr>RAILGUN Cookbook.</nobr></h3>
+                        <a href="https://docs.railgun.org/developer-guide" target="_blank" class="btn btn-extra-large btn-transparent-white btn-box-shadow-flat border-radius-6px">Developer Guide</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start footer -->
+        <footer class="footer-dark bg-slate-blue rail-background-footer">
+            <div class="footer-top padding-40px-top border-bottom border-color-white-transparent">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-3 text-center text-md-start sm-margin-20px-bottom">
+                            <img width="140px" src="svg/railgun-logo-white.svg" data-at2x="svg/railgun-logo-white.svg" alt="RAILGUN On-Chain Privacy for DeFi">
+                        </div>
+                        <div class="col-12 col-md-6 text-center sm-margin-20px-bottom">
+                            <span class="alt-font font-weight-500 d-inline-block align-middle margin-5px-right text-uppercase text-white">Is privacy important to you?</span>
+                        </div>
+                        <div class="col-12 col-md-3 text-center text-md-end">
+                            <div class="social-icon-style-12">
+                                <ul class="extra-small-icon light">
+                                    <li><a href="https://twitter.com/railgun_project" target="_blank" aria-label="Twitter"><i class="fab fa-twitter icon-country"></i></a></li>
+                                    <li><a href="https://t.me/railgun_privacy" target="_blank" aria-label="Telegram"><i class="fab fa-telegram icon-country"></i></a></li>
+                                    <li><a href="https://discord.gg/jgUQjkYWzh" target="_blank" aria-label="Discord"><i class="fab fa-discord icon-country"></i></a></li>
+                                    <li><a href="https://medium.com/@Railgun_Project" target="_blank" aria-label="Medium"><i class="fa-brands fa-medium icon-country"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-slate-blue border-radius-6px margin-30px-top">
+                          <div class="col-12 text-footer">
+                              <p>Notice: This is an independent info site about RAILGUN smart contracts, run by enthusiasts and evangelists. Nobody is in charge of RAILGUN itself.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom padding-two-tb lg-padding-eight-tb md-padding-50px-tb xs-padding-five-left">
+ 
+                <div class="container">
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+                        <!-- start footer column -->
+                        <div class="text-footer col col-xl-3 col-lg md-margin-50px-bottom xs-margin-ten-bottom">
+                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">About</span>
+                            <ul>
+                                <li><a href="https://rail.governance.fi/" target="_blank">Governance Portal</a></li>
+                                <li><a href="wallets.html">Wallets</a></li>
+                                <li><a href="features.html">Features</a></li>
+                                <li><a href="integrations.html">Integrations</a></li>
+                                <li><a href="bug-bounty.html">Bug Bounty</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+                        <!-- start footer column -->
+                        <div class="text-footer col col-xl-3 col-lg md-margin-50px-bottom xs-margin-ten-bottom">
+                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Docs</span>
+                            <ul>
+                                <li><a href="https://docs.railgun.org/wiki" target="_blank">RAILGUN Wiki</a></li>
+                                <li><a href="https://docs.railgun.org/developer-guide" target="_blank"><nobr>RAILGUN Developer Guide</nobr></a></li>
+                                <li><a href="https://assets.railgun.org/docs/audits" target="_blank">Audit Reports</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+                        <!-- start footer column -->
+                        <div class="text-footer col col-xl-3 col-lg md-margin-50px-bottom xs-margin-ten-bottom">
+                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Community</span>
+                            <ul>
+                                <li><a href="https://twitter.com/railgun_project" target="_blank" aria-label="Twitter"><i class="fab fa-twitter icon-railgun text-center"></i>@RAILGUN_Project</a></li>
+                                <li><a href="https://t.me/railgun_privacy" target="_blank" aria-label="Telegram"><i class="fab fa-telegram icon-railgun text-center"></i>@RAILGUN_Privacy</a></li>
+                                <li><a href="https://discord.gg/jgUQjkYWzh" target="_blank" aria-label="Discord"><i class="fab fa-discord icon-railgun text-center"></i>Discord</a></li>
+                                <li><a href="https://github.com/Railgun-Community" target="_blank" aria-label="GitHub"><i class="fab fa-github icon-railgun text-center"></i>RAILGUN GitHub</a></li>
+                                <li><a href="https://medium.com/@Railgun_Project" target="_blank" aria-label="Medium"><i class="fa-brands fa-medium icon-railgun text-center"></i>RAILGUN Articles</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <!-- javascript -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/theme-vendors.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/font-awesome.js"></script>
+
+        <!-- RAILGUN lottie required script -->
+        <script type="text/javascript" src="js/libs/lottie-player.js"></script>
+    </body>
+</html>
